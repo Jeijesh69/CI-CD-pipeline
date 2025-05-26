@@ -14,7 +14,7 @@ REBUILD=${2:-no}
 REPO_DIR="/home/jeijesh/git-repos/CI-CD-pipeline"
 REGISTRY="192.168.49.2:30500"
 IMAGE_NAME="carvilla"
-K8S_SERVER="https://192.168.49.2:6443"  # Explicitly set K8s API server
+K8S_SERVER="https://192.168.49.2:8443"  # Explicitly set K8s API server
 
 cd $REPO_DIR
 
@@ -80,4 +80,4 @@ echo "Verifying deployment..."
 kubectl --server=${K8S_SERVER} get pods -l app=carvilla-web
 kubectl --server=${K8S_SERVER} get svc carvilla-web-service
 
-echo "CarVilla Web App is now accessible at: http://10.34.7.115:40000"
+echo "CarVilla Web App is now accessible at: http://192.168.49.2:30000"

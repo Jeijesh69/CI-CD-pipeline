@@ -11,10 +11,10 @@ fi
 
 BUILD_NUMBER=$1
 REBUILD=${2:-no}
-REPO_DIR="/home/widhi/git-repos/CI-CD-pipeline"
-REGISTRY="10.34.7.115:30500"
+REPO_DIR="/home/jeijesh/git-repos/CI-CD-pipeline"
+REGISTRY="192.168.49.2:30500"
 IMAGE_NAME="carvilla"
-K8S_SERVER="https://10.34.7.115:6443"  # Explicitly set K8s API server
+K8S_SERVER="https://192.168.49.2:6443"  # Explicitly set K8s API server
 
 cd $REPO_DIR
 

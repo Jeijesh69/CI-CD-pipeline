@@ -58,7 +58,7 @@ pipeline {
         stage('Verify Deployment') {
             steps {
                 sh "kubectl rollout status deployment/carvilla-web -n default"
-                echo "Application deployed and accessible at http://10.34.7.115:40000"
+                echo "Application deployed and accessible at http://192.168.49.2:30000"
             }
         }
     }
